@@ -1,2 +1,13 @@
 # ImageClassifier
-A webapp using the pretrained MobileNet model to classify the image.
+link: https://agrawalsourabh.github.io/ImageClassifier/
+
+**Description**
+A web app for Image Classification.
+
+**Model Used**
+Pretrained MobileNet.
+
+**Dataset**
+ImageNet
+
+
