@@ -49,6 +49,7 @@ let model;
     console.log("tf methods: ", tf);
     console.log("Model loading...");
     model = await tf.loadLayersModel('./tfjs-models/mobilenet/model.json');
+    document.getElementById('p_bar').display = "none";
     console.log("model loaded");
 })();
 
