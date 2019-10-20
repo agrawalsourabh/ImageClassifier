@@ -48,7 +48,9 @@ let model;
     console.log("verison log:", tf.version);
     console.log("tf methods: ", tf);
     console.log("Model loading...");
+    document.getElementById('p_bar').style.display = "block";
     model = await tf.loadLayersModel('./tfjs-models/mobilenet/model.json');
+    document.getElementById('p_bar').style.display = "none";
     console.log("model loaded");
 })();
 

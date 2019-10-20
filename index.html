@@ -21,10 +21,19 @@
     <title> Image classifier </title>
 </head>
 
-<body>    
-    <main>  
+<body>
+    <main>
         <div class="container">
             <!-- Row 1 Heading -->
+            <div class="row">
+                <div class="col">
+                    <div class="progress" style="background-color: white;">
+                        <div id="p_bar" class="progress-bar progress-bar-striped bg-info" role="progressbar" style="width: 50%"
+                            aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"
+                            style="margin-top: 20px;" style="display: none;"> Model Loading...</div>
+                    </div>
+                </div>
+            </div>
             <div class="row">
                 <div class="col">
                 </div>
@@ -67,7 +76,7 @@
             <div class="row">
                 <!-- Column 1 Image Selector -->
                 <div class="col align-bottom" style="background-color: white; margin: 30px;">
-                    <input type="file" id="image-selector">
+                    <input type="file" id="image-selector" accept="image/*">
                 </div>
                 <!-- Column 2 Blank -->
                 <div class="col"></div>
