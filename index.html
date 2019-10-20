@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@1.0.0/dist/tf.min.js"></script>
+
+    <title> Image classifier </title>
+</head>
+
+<body>    
+    <main>  
+        <div class="container">
+            <!-- Row 1 Heading -->
+            <div class="row">
+                <div class="col">
+                </div>
+                <div class="col">
+                    <h1 style="color: #424543;">Image Classifier</h1>
+                </div>
+                <div class="col">
+                </div>
+            </div>
+            <hr>
+            <!-- Row 2 Predict Button on the right side of the frame-->
+            <div class="row">
+                <div class="clearfix"></div>
+                <!-- Column 1 Predict Buttons -->
+                <div class="col" style="background-color: white;">
+                    <button id="predict-button" class="btn btn-dark float-right">
+                        <span id="spinner" class="spinner-border spinner-border-sm" role="status" aria-hidden="true"
+                            style="display:none;">
+                        </span>
+                        Predict
+                    </button>
+                </div>
+            </div>
+
+            <hr>
+            <!-- Row 3 Image on the left and graph on the right-->
+            <div class="row">
+                <!-- Column 1 Image -->
+                <div class="col" style=" object-fit: cover;">
+                    <img id="selected-image" class="img-responsive rounded border border-secondary" style="width: 300px; height: 300px;
+                        background-color: whitesmoke; " src="res/img2.svg" />
+                </div>
+                <!-- Column 2 Donut chart -->
+                <div class="col" style="background-color: white;">
+                    <canvas id="myChart" style="max-width: 100%; height: 100%;"></canvas>
+                </div>
+            </div>
+
+            <!-- Row 4 Select Image button on the left side of the frame-->
+            <div class="row">
+                <!-- Column 1 Image Selector -->
+                <div class="col align-bottom" style="background-color: white; margin: 30px;">
+                    <input type="file" id="image-selector">
+                </div>
+                <!-- Column 2 Blank -->
+                <div class="col"></div>
+            </div>
+        </div>
+        <script src="predict.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js"></script>
+        <script src="imagenet_classes.js"></script>
+    </main>
+</body>
+
+</html>
