@@ -1,13 +1,17 @@
 # ImageClassifier
-link: https://agrawalsourabh.github.io/ImageClassifier/
+Link: https://agrawalsourabh.github.io/ImageClassifier/
 
-**Description**
+**Description:** </br>
 A web app for Image Classification.
 
-**Model Used**
+**Model Used:** </br>
 Pretrained MobileNet.
 
-**Dataset**
+**Dataset** </br>
 ImageNet
+
+**Screenshot**
+
+
 
 
